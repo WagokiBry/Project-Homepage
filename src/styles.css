@@ -76,12 +76,19 @@ h2 { font-size: 2.4rem; }
   display: block;
 }
 
+@font-face {
+  font-family: ;
+  src: url();
+  font-display: swap;
+}
+
 /* Tablet adjustments */
 @media (min-width: 768px) {
   .responsive-header img {
     max-height: 50vh;
   }
 }
+
 
 /* Desktop adjustments */
 @media (min-width: 1024px) {
