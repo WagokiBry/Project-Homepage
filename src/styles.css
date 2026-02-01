@@ -32,7 +32,7 @@ body {
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  background: rgb(11, 225, 79);
+ 
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -65,7 +65,7 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
-  color: red;
+ 
 }
 
 p {
@@ -77,8 +77,8 @@ p {
 
 h1 {
   font-size: 3.2rem;
-  font-family: "Alfa Slab One", cursive;
-  color: rgb(34, 249, 152);
+ color: rgb(36, 14, 243);
+  
 }
 
 h2 {
