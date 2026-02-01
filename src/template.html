@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Header</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   
-  <picture>
-  <source srcset="./images/computer-image.png" media="(min-width: 1024px)">
-  <source srcset="./images/tablet-image.png" media="(min-width: 768px)">
-  <img src="./images/mobile-image.png" alt="Responsive Header Image">
-</picture>
 
-
+  <header class="header-parent">
+    <picture class="responsive-header">
+      <!-- Desktop first -->
+      <source srcset="./images/desktop-image.webp" media="(min-width: 1024px)">
+      <!-- Tablet -->
+      <source srcset="./images/tablet-image.webp" media="(min-width: 768px)">
+      <!-- Mobile default -->
+      <img src="./images/mobile-image.webp" alt="Responsive Header Image">
+    </picture>
+  </header>
 
 </body>
 </html>

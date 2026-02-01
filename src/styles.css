@@ -21,51 +21,25 @@ html {
   line-height: 1.5;
 }
 
-/* Full-height layouts */
-html,
-body {
-  min-height: 100%;
-}
-
 /* Body defaults */
 body {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
- 
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
 /* Media elements */
-img,
 picture,
 video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
-}
-
-/* Form elements */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  color: inherit;
+  width: 100%;
+  height: auto;
 }
 
 /* Typography */
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
- 
 }
 
 p {
@@ -75,18 +49,43 @@ p {
   font-style: italic;
 }
 
-h1 {
-  font-size: 3.2rem;
- 
-  
-}
-
-h2 {
-  font-size: 2.4rem;
-}
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
 
 /* Root stacking context (React / Next.js safe) */
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* =========================
+   Header / Responsive Image
+   ========================= */
+
+.header-parent {
+  width: 100%;
+  max-width: 1200px; /* optional max width */
+  margin: 0 auto;
+}
+
+.responsive-header img {
+  width: 100%;          /* full width of container */
+  height: auto;         /* auto to preserve aspect ratio */
+  max-height: 80vh;     /* optional limit on tallest view */
+  object-fit: contain;  /* ensures the full image is visible */
+  display: block;
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) {
+  .responsive-header img {
+    max-height: 50vh;
+  }
+}
+
+/* Desktop adjustments */
+@media (min-width: 1024px) {
+  .responsive-header img {
+    max-height: 70vh;
+  }
 }
