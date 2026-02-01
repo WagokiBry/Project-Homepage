@@ -1,6 +1,6 @@
 @font-face {
   font-family: "playfair" ;
-  src: url('./fonts/Playfair-VariableFont_opsz\,wdth\,wght.ttf') format("truetype");
+  src: url('./fonts/Playfair-VariableFont_opsz\,wdth\,wght.woff2') format("woff2");
   font-style: normal;
   font-display: swap;
 }
@@ -72,6 +72,16 @@ h2 { font-size: 2.4rem; }
   width: 100%;
   max-width: 1200px; /* optional max width */
   margin: 0 auto;
+  position: relative;
+  margin-bottom: 2rem;
+}
+h1{
+  position: absolute;
+   top: 70%;        /* vertical center */
+  left: 60%;       /* horizontal center */
+  transform: translate(-50%, -50%); /* perfect centering */
+  color: white;
+  font-size: 4rem;
 }
 
 .responsive-header img {
@@ -83,7 +93,7 @@ h2 { font-size: 2.4rem; }
 }
 
 p {
-  font-family: "playfair", serif;
+  font-family: "playfair";
 }
 
 .padding-length {
