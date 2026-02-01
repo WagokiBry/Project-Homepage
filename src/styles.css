@@ -86,6 +86,14 @@ p {
   font-family: "playfair", serif;
 }
 
+.padding-length {
+   width: 100%;
+  max-width: 350px; /* optional max width */
+  margin: 0 auto;
+  padding: 0 2rem;
+  
+}
+
 /* Tablet adjustments */
 @media (min-width: 768px) {
   .responsive-header img {
