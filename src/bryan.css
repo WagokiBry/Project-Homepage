@@ -1,0 +1,7 @@
+div {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(245, 16, 210);
+    border: 10px solid rgb(21, 226, 66);
+    z-index: 200;
+}

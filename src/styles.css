@@ -1,0 +1,91 @@
+/* =========================
+   CSS RESET / BASE STYLES
+   ========================= */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+}
+
+/* Improve text rendering */
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* Full-height layouts */
+html,
+body {
+  min-height: 100%;
+}
+
+/* Body defaults */
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgb(11, 225, 79);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Media elements */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Typography */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: "Alfa Slab One", cursive;
+  color: rgb(34, 249, 152);
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+/* Root stacking context (React / Next.js safe) */
+#root,
+#__next {
+  isolation: isolate;
+}
